@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="view_count_text">%1$s Aufrufe</string>
+    <string name="upload_date_text">Veröffentlicht am %1$s</string>
+    <string name="no_player_found">Keinen Streamplayer gefunden. Möchtest du VLC installieren?</string>
+    <string name="install">Jetzt installieren</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="open_in_browser">In Browser öffnen</string>
+    <string name="share">Teilen</string>
+    <string name="download">Download</string>
+    <string name="search">Suchen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="did_you_mean">Meintest du: %1$s ?</string>
+    <string name="search_page">Suchseite: </string>
+    <string name="share_dialog_title">Teilen mit</string>
+    <string name="choose_browser">Browser</string>
+    <string name="screen_rotation">Rotation</string>
+    <string name="settings_activity_title">Einstellungen</string>
+    <string name="useExternalPlayerTitle">Externen Player benutzen</string>
+    <string name="download_path_title">Downloadverzeichnis für Videos</string>
+    <string name="download_path_summary">Verzeichnis in dem heruntergeladene Videos gespeichert werden.</string>
+    <string name="download_path_dialog_title">Downloadverzeichnis für Videos eingeben</string>
+    <string name="autoplay_through_intent_title">Automatisches Abspielen durch Intent</string>
+    <string name="autoplay_through_intent_summary">Startet ein Video automatisch wenn es von einer anderen App aufgerufen wurde.</string>
+    <string name="default_resolution_title">Standardauflösung</string>
+    <string name="play_with_kodi_title">Mit Kodi abspielen</string>
+    <string name="kore_not_found">Kore App wurde nicht gefunden. Möchten sie Kore jetzt installieren?</string>
+    <string name="installeKore">Kore installieren</string>
+    <string name="show_play_with_kodi_title">Zeige \"Mit Kodi abspielen\" Option</string>
+    <string name="show_play_with_kodi_summary">Zeigt eine Option an, über die man Videos mit dem Kodi Mediacenter abspielen kann.</string>
+    <string name="play_audio">Audio</string>
+    <string name="default_audio_format_title">Bevorzugtes Audioformat</string>
+    <string name="webm_description">WebM — freies Format</string>
+    <string name="m4a_description">m4a — bessere Qualität</string>
+    <string name="download_dialog_title">Herunterladen</string>
+    <string-array name="downloadOptions">
+        <item>Video</item>
+        <item>Audio</item>
+    </string-array>
+    <string name="next_video_title">Nächstes Video</string>
+    <string name="show_next_and_similar_title">Zeige nächstes und ähnliche Videos</string>
+    <string name="url_not_supported_toast">URL wird nicht unterstützt</string>
+    <string name="similar_videos_btn_text">Ähnliche Videos</string>
+    <string name="settings_category_video_audio_title">Video &amp; Audio</string>
+    <string name="search_language_title">Bevorzugte Sprache des Inhalts</string>
+    <string name="list_thumbnail_view_description">Video-Vorschaubild</string>
+    <string name="detail_thumbnail_view_description">Video-Vorschaubild</string>
+    <string name="detail_uploader_thumbnail_view_description">Nutzerbild</string>
+    <string name="detail_dislikes_img_view_description">Gefällt nicht</string>
+    <string name="detail_likes_img_view_description">Gefällt</string>
+    <string name="loading">Lade</string>
+    <string name="use_external_video_player_title">Benutze externen Videoabspieler</string>
+    <string name="use_external_audio_player_title">Benutze externen Audioabspieler</string>
+    <string name="background_player_playing_toast">Spiele im Hintergrund ab</string>
+    <string name="play_btn_text">Abspielen</string>
+
+    <string name="use_tor_title">Benutze TOR</string>
+    <string name="use_tor_summary">(Experimentell) Erzwinge das Herunterladen durch TOR für verbesserte Privatsphäre (Videostream noch nicht unterstützt).</string>
+    <string name="background_player_name">NewPipe Hintergrundwiedergabe</string>
+    <string name="network_error">Netzwerkfehler</string>
+
+    <string name="download_path_audio_title">Downloadverzeichnis für Musik</string>
+    <string name="download_path_audio_summary">Verzeichnis zum Speichern heruntergeladener Audiodateien</string>
+    <string name="download_path_audio_dialog_title">Pfad für heruntergeladene Audiodateien eingeben.</string>
+
+    <string name="theme_title">Aussehen</string>
+    <string name="dark_theme_title">Dunkel</string>
+    <string name="light_theme_title">Hell</string>
+
+    <string name="settings_category_appearance_title">Aussehen</string>
+    <string name="settings_category_other_title">Andere</string>
+    <string name="err_dir_create">Kann Downloadverzeichnis nicht anlegen \'%1$s\'</string>
+    <string name="info_dir_created">Downloadverzeichnis \'%1$s\' erstellt</string>
+    <string name="general_error">Fehler</string>
+    <string name="could_not_load_thumbnails">Konnte nicht alle Vorschaubilder laden</string>
+    <string name="youtube_signature_decryption_error">Konnte Video-URL-Signatur nicht entschlüsseln.</string>
+    <string name="parsing_error">Konnte Webseite nicht parsen.</string>
+    <string name="content_not_available">Inhalt nicht verfügbar.</string>
+    <string name="blocked_by_gema">Durch die GEMA gesperrt.</string>
+
+    <string name="content">Inhalt</string>
+    <string name="show_age_restricted_content_title">Altersbeschränkte Inhalte anzeigen</string>
+    <string name="video_is_age_restricted">Video ist altersbeschränkt. Schalten Sie erst altersbeschränkte Videos in den Einstellungen ein.</string>
+
+    <string name="could_not_setup_download_menu">Konnte Downloadmenü nicht einrichten.</string>
+    <string name="live_streams_not_supported">Dies ist ein LIVESTREAM. Diese werden noch nicht unterstützt.</string>
+
+
+    <string name="light_parsing_error">Konnte Webseite nicht vollständig parsen.</string>
+    <string name="error_report_button_text">Fehler via Mail melden</string>
+    <string name="error_snackbar_action">MELDEN</string>
+    <string name="what_device_headline">Info:</string>
+    <string name="what_happened_headline">Dies ist passiert:</string>
+    <string name="info_labels">Was:\\nAnfrage:\\nSprache des Inhalts:\\nDienst:\\nZeit (GMT):\\nPacket:\\nVersion:\\nOS-Version:\\nGlob. IP-Bereich:</string>
+    <string name="error_details_headline">Details:</string>
+
+
+    <string name="enable_background_audio">Im Hintergrund abspielen</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="text">Text</string>
+    <string name="logging_normal">Normal</string>
+    <string name="logging_verbose">Ausführlich</string>
+    <string name="retry">Wiederholen</string>
+    <string name="off">[aus]</string>
+    <string name="error_drm_unsupported_scheme">Dieses Gerät unterstützt das erforderliche DRM-Schema nicht</string>
+    <string name="error_drm_unknown">Ein unbekannter DRM-Fehler ist aufgetreten</string>
+    <string name="error_querying_decoders">Konnte Dekodierer des Gerätes nicht abrufen</string>
+    <string name="error_instantiating_decoder">Konnte Dekodierer <xliff:g id="decoder_name">%1$s</xliff:g> nicht instantiieren</string>
+    <string name="storage_permission_denied">Zugriff auf den Massenspeicher wurde verweigert</string>
+    <string name="use_exoplayer_title">Benutze ExoPlayer</string>
+    <string name="use_exoplayer_summary">Experimentell</string>
+    <string name="sorry_string">Entschuldigung. Dies sollte nicht passieren.</string>
+    <string name="error_snackbar_message">Entschuldigung. Es sind einige Fehler aufgetreten.</string>
+    <string name="info_searched_lbl">Gesucht:</string>
+    <string name="info_requested_stream_lbl">Angeforderter Stream:</string>
+    <string name="your_comment">Dein Kommentar (auf englisch):</string>
+    <string name="logging">Protokollierung</string>
+    <string name="error_no_decoder">Dieses Gerät stellt keinen Dekodierer für <xliff:g id="mime_type">%1$s</xliff:g> bereit</string>
+    <string name="error_no_secure_decoder">Dieses Gerät stellt keinen abgesicherten Dekodierer für <xliff:g id="mime_type">%1$s</xliff:g> bereit</string>
+    <string name="could_not_get_stream">Konnte keinen Stream holen.</string>
+    <string name="error_drm_not_supported">Geschützte Inhalte werden von API-Ebenen unterhalb von 18 nicht unterstützt</string>
+    <string name="autoplay_by_calling_app_title">Bei Aufruf aus einer anderen App automatisch abspielen</string>
+    <string name="autoplay_by_calling_app_summary">Spielt ein Video automatisch ab, wenn NewPipe von einer anderen App aufgerufen wurde.</string>
+    <string name="report_error">Einen Fehler melden</string>
+    <string name="user_report">Anwenderbericht</string>
+
+    <string name="duration_live">live</string>
+
+    <string name="main_bg_subtitle">„Suchen“ antippen und loslegen</string>
+    <string name="downloads">Downloads</string>
+    <string name="downloads_title">Downloads</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="error_report_title">Fehlerbericht</string>
+
+    <string name="delete">Löschen</string>
+    <string name="checksum">Prüfsumme</string>
+
+    <string name="switch_mode">Zwischen Liste und Gitter umschalten</string>
+
+    <string name="videos">Videos</string>
+    <string name="subscriber">Abonenten</string>
+    <string name="views">Aufrufe</string>
+    <string name="short_thousand">Tsd.</string>
+    <string name="short_million">Mio.</string>
+    <string name="short_billion">Mrd.</string>
+
+    <string name="msg_url">Download-URL</string>
+    <string name="msg_name">Dateiname</string>
+    <string name="msg_error">Fehler</string>
+    <string name="msg_exists">Datei existiert bereits</string>
+    <string name="msg_wait">Bitte warten…</string>
+    <string name="msg_copied">In Zwischenablage kopiert.</string>
+    <string name="no_available_dir">Bitte wählen Sie ein verfügbares Downloadverzeichnis.</string>
+
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="view">Anzeigen</string>
+    <string name="add">Neue Mission</string>
+    <string name="finish">Okay</string>
+    <string name="msg_server_unsupported">Server nicht unterstützt</string>
+    <string name="could_not_load_image">Konnte Bild nicht laden</string>
+    <string name="app_ui_crash">App/UI abgestürzt</string>
+    <string name="msg_threads">Threads</string>
+    <string name="msg_running">NewPipe lädt herunter</string>
+    <string name="msg_running_detail">Für Details antippen</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <string name="msg_url_malform">Beschädigte URL oder Internet nicht erreichbar</string>
+    <string name="msg_fetch_filename">Vorgeschlagener Dateiname</string>
+    <string name="title_activity_channel">Kanalaktivität</string>
+    <string name="large_text">"
+ Material is the metaphor.
+
+
+
+ A material metaphor is the unifying theory of a rationalized space and a system of motion.
+ The material is grounded in tactile reality, inspired by the study of paper and ink, yet
+ technologically advanced and open to imagination and magic.
+
+ Surfaces and edges of the material provide visual cues that are grounded in reality. The
+ use of familiar tactile attributes helps users quickly understand affordances. Yet the
+ flexibility of the material creates new affordances that supercede those in the physical
+ world, without breaking the rules of physics.
+
+ The fundamentals of light, surface, and movement are key to conveying how objects move,
+ interact, and exist in space and in relation to each other. Realistic lighting shows
+ seams, divides space, and indicates moving parts.
+
+
+
+ Bold, graphic, intentional.
+
+
+
+ The foundational elements of print based design typography, grids, space, scale, color,
+ and use of imagery guide visual treatments. These elements do far more than please the
+ eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge
+ imagery, large scale typography, and intentional white space create a bold and graphic
+ interface that immerse the user in the experience.
+
+ An emphasis on user actions makes core functionality immediately apparent and provides
+ waypoints for the user.
+
+
+
+ Motion provides meaning.
+
+
+
+ Motion respects and reinforces the user as the prime mover. Primary user actions are
+ inflection points that initiate motion, transforming the whole design.
+
+ All action takes place in a single environment. Objects are presented to the user without
+ breaking the continuity of experience even as they transform and reorganize.
+
+ Motion is meaningful and appropriate, serving to focus attention and maintain continuity.
+ Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.
+
+
+
+ 3D world.
+
+
+
+ The material environment is a 3D space, which means all objects have x, y, and z
+ dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the
+ positive z-axis extending towards the viewer. Every sheet of material occupies a single
+ position along the z-axis and has a standard 1dp thickness.
+
+ On the web, the z-axis is used for layering and not for perspective. The 3D world is
+ emulated by manipulating the y-axis.
+
+
+
+ Light and shadow.
+
+
+
+ Within the material environment, virtual lights illuminate the scene. Key lights create
+ directional shadows, while ambient light creates soft shadows from all angles.
+
+ Shadows in the material environment are cast by these two light sources. In Android
+ development, shadows occur when light sources are blocked by sheets of material at
+ various positions along the z-axis. On the web, shadows are depicted by manipulating the
+ y-axis only. The following example shows the card with a height of 6dp.
+
+
+
+ Resting elevation.
+
+
+
+ All material objects, regardless of size, have a resting elevation, or default elevation
+ that does not change. If an object changes elevation, it should return to its resting
+ elevation as soon as possible.
+
+
+
+ Component elevations.
+
+
+
+ The resting elevation for a component type is consistent across apps (e.g., FAB elevation
+ does not vary from 6dp in one app to 16dp in another app).
+
+ Components may have different resting elevations across platforms, depending on the depth
+ of the environment (e.g., TV has a greater depth than mobile or desktop).
+
+
+
+ Responsive elevation and dynamic elevation offsets.
+
+
+
+ Some component types have responsive elevation, meaning they change elevation in response
+ to user input (e.g., normal, focused, and pressed) or system events. These elevation
+ changes are consistently implemented using dynamic elevation offsets.
+
+ Dynamic elevation offsets are the goal elevation that a component moves towards, relative
+ to the component’s resting state. They ensure that elevation changes are consistent
+ across actions and component types. For example, all components that lift on press have
+ the same elevation change relative to their resting elevation.
+
+ Once the input event is completed or cancelled, the component will return to its resting
+ elevation.
+
+
+
+ Avoiding elevation interference.
+
+
+
+ Components with responsive elevations may encounter other components as they move between
+ their resting elevations and dynamic elevation offsets. Because material cannot pass
+ through other material, components avoid interfering with one another any number of ways,
+ whether on a per component basis or using the entire app layout.
+
+ On a component level, components can move or be removed before they cause interference.
+ For example, a floating action button (FAB) can disappear or move off screen before a
+ user picks up a card, or it can move if a snackbar appears.
+
+ On the layout level, design your app layout to minimize opportunities for interference.
+ For example, position the FAB to one side of stream of a cards so the FAB won’t interfere
+ when a user tries to pick up one of cards.
+
+
+ "</string>
+    <string name="reCaptchaActivity">reCAPTCHA</string>
+    <string name="black_theme_title">Schwarz</string>
+
+    <string name="reCaptcha_title">reCAPTCHA Herausforderung</string>
+    <string name="recaptcha_request_toast">reCAPTCHA Herausforderung angefordert</string>
+
+    </resources>

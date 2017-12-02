@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.schabi.goldstar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.schabi.goldstar.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name="org.schabi.goldstar.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.schabi.goldstar.detail.VideoItemDetailActivity"
+            android:label="@string/title_videoitem_detail"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.schabi.goldstar.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.schabi.goldstar.player.PlayVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/VideoPlayerTheme"
+            tools:ignore="UnusedAttribute" />
+
+        <service
+            android:name="org.schabi.goldstar.player.BackgroundPlayer"
+            android:exported="false"
+            android:label="@string/background_player_name" />
+
+        <activity
+            android:name="org.schabi.goldstar.player.ExoPlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/PlayerTheme">
+            <intent-filter>
+                <action android:name="org.schabi.newpipe.exoplayer.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="asset" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="org.schabi.goldstar.player.BackgroundPlayer"
+            android:exported="false"
+            android:label="@string/background_player_name" />
+
+        <activity
+            android:name="org.schabi.goldstar.settings.SettingsActivity"
+            android:label="@string/settings_activity_title" />
+        <activity
+            android:name="org.schabi.goldstar.PanicResponderActivity"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="info.guardianproject.panic.action.TRIGGER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.schabi.goldstar.ExitActivity"
+            android:label="@string/general_error"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity android:name="org.schabi.goldstar.report.ErrorActivity" />
+
+        <!-- giga get related -->
+        <activity
+            android:name="org.schabi.goldstar.download.DownloadActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+
+        <service android:name="us.shandian.giga.service.DownloadManagerService" />
+
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/FilePickerTheme"/>
+        <activity
+            android:name="org.schabi.goldstar.ChannelActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="org.schabi.goldstar.ReCaptchaActivity"
+            android:label="@string/reCaptchaActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="org.schabi.goldstar.RouterActivity"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="youtube.com" />
+                <data android:host="m.youtube.com" />
+                <data android:host="www.youtube.com" />
+                <!-- video prefix -->
+                <data android:pathPrefix="/v/" />
+                <data android:pathPrefix="/watch" />
+                <data android:pathPrefix="/attribution_link" />
+                <!-- channel prefix -->
+                <data android:pathPrefix="/channel/"/>
+                <data android:pathPrefix="/user/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="youtu.be" />
+                <data android:pathPrefix="/" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="vnd.youtube" />
+                <data android:scheme="vnd.youtube.launch" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="org.schabi.goldstar.fragments.search_fragment.other_fragments.Recent_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/recent_textview" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_recent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/stream_item"
+        android:scrollbars="vertical" />
+</FrameLayout>
